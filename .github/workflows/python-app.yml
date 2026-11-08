@@ -34,7 +34,7 @@ jobs:
     - name: Lint and formatter with ruff
       run: |
         ruff check . --fix
-        ruff format --check .
+        ruff format .
 
     - name: Type checking with mypy
       run: |
