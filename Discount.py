@@ -11,7 +11,6 @@ def check_discount(subtotal: int) -> float:
 def calculate_total(items):
     Subtotal = sum(i['price'] for i in items)
 
-    # استدعاء دالة حساب الخصم
     discount = check_discount(Subtotal)
 
     return Subtotal - discount
