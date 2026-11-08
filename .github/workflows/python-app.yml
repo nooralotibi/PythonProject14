@@ -33,7 +33,7 @@ jobs:
         
     - name: Lint and formatter with ruff
       run: |
-        ruff check .
+        ruff check . --fix
         ruff format --check .
 
     - name: Type checking with mypy
