@@ -8,7 +8,6 @@ from Discount import calculate_total  # تأكدي أن اسم الملف يطا
     (150, 150.0),  # حالة 3: أقل من 200 (بدون خصم)
 ])
 def test_calculate_total_parameterized(subtotal_price, expected_final):
-    # نجهز السلة بناءً على المجموع المستهدف في الجدول
     items = [{'price': subtotal_price, 'quantity': 1}]
 
     # pytest يشغل هذا الاختبار 3 مرات تلقائياً لكل صف في الجدول
